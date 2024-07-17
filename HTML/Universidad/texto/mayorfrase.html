@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparar Frases por Número de Palabras</title>
+    <link rel="stylesheet" href="/CSS/universidad/primos.css">
+</head>
+<body>
+    <header>
+        <h1>Proyecto Educativo</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">Ejercicios por Niveles</a>
+                    <div class="dropdown-content">
+                        <a href="/HTML/Primaria/primaria.html">Primaria</a>
+                        <a href="/HTML/Secundaria/secundaria.html">Secundaria</a>
+                        <a href="/HTML/Universidad/universidad.html">Universidad</a>
+                    </div>
+                </li>
+                <li><a href="#nosotros">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Comparar Frases</h1>
+        <label for="frase1">Ingrese la primera frase:</label>
+        <input type="text" id="frase1">
+        <label for="frase2">Ingrese la segunda frase:</label>
+        <input type="text" id="frase2">
+        <button onclick="compararFrases()">Comparar</button>
+        <div id="resultado"></div>
+        <a href="/index.html" class="regresar">Regresar a la página principal</a>
+    </div>
+    <script src="/JS/universidad/mayor-frase.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5EBE0;
+}
+
+header {
+    background-color: #dac3ac;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos del menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #D6CCC2;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #555;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px; /* Espacio extra para evitar superposición */
+    padding-bottom: 20px; /* Espacio extra para la explicación */
+}
+
+.calculator {
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px; /* Espacio entre la calculadora y la explicación */
+}
+
+.display {
+    margin-bottom: 20px;
+}
+
+#display {
+    width: 100%;
+    padding: 10px;
+    font-size: 2em;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.button {
+    padding: 20px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    background-color: #50555c;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button.yellow {
+    background-color: #f9a825;
+}
+
+.button.orange {
+    background-color: #ff5722;
+}
+
+.button:hover {
+    background-color: #666b73;
+}
+
+.equals {
+    grid-column: span 2;
+    background-color: #388e3c;
+    color: #fff;
+}
+
+.equals:hover {
+    background-color: #2e7d32;
+}
+
+.explanation-box {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    margin-top: 20px; /* Espacio superior para separación */
+}

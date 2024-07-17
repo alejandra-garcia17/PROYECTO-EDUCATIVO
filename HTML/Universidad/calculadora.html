@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="/CSS/universidad/calculadora.css">
+</head>
+<body>
+  <header>
+    <h1>Proyecto Educativo</h1>
+    <nav>
+        <ul>
+            <li><a href="/index.html">Inicio</a></li>
+            <li class="dropdown">
+                <a class="dropbtn">Ejercicios por Niveles</a>
+                <div class="dropdown-content">
+                    <a href="/HTML/Primaria/primaria.html">Primaria</a>
+                    <a href="/HTML/Secundaria/secundaria.html">Secundaria</a>
+                    <a href="/HTML/Universidad/universidad.html">Universidad</a>
+                </div>
+            </li>
+            <li><a href="#nosotros">Sobre Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="calculator">
+      <div class="display">
+        <input type="text" id="display" disabled>
+      </div>
+      <div class="buttons">
+        <button class="button yellow" onclick="clearDisplay()">AC</button>
+        <button class="button" onclick="deleteLast()">DEL</button>
+        <button class="button" onclick="appendToDisplay('%')">%</button>
+        <button class="button orange" onclick="appendToDisplay('/')">/</button>
+        <button class="button" onclick="appendToDisplay('7')">7</button>
+        <button class="button" onclick="appendToDisplay('8')">8</button>
+        <button class="button" onclick="appendToDisplay('9')">9</button>
+        <button class="button orange" onclick="appendToDisplay('*')">*</button>
+        <button class="button" onclick="appendToDisplay('4')">4</button>
+        <button class="button" onclick="appendToDisplay('5')">5</button>
+        <button class="button" onclick="appendToDisplay('6')">6</button>
+        <button class="button orange" onclick="appendToDisplay('-')">-</button>
+        <button class="button" onclick="appendToDisplay('1')">1</button>
+        <button class="button" onclick="appendToDisplay('2')">2</button>
+        <button class="button" onclick="appendToDisplay('3')">3</button>
+        <button class="button orange" onclick="appendToDisplay('+')">+</button>
+        <button class="button" onclick="appendToDisplay('0')">0</button>
+        <button class="button" onclick="appendToDisplay('.')">.</button>
+        <button class="button equals" onclick="calculateResult()">=</button>
+      </div>
+    </div>
+    <div class="explanation-box">
+      <h3>Explicación del código</h3>
+      <p>Esta es una herramienta utilizada para realizar operaciones matemáticas básicas y complejas, como sumas, restas, multiplicaciones, divisiones y cálculos más avanzados como raíces cuadradas y funciones trigonométricas. En el contexto educativo para estudiantes , una calculadora ayuda a los estudiantes a verificar sus cálculos, aprender conceptos matemáticos y resolver problemas de manera más eficiente.</p>
+    </div>
+  </div>
+  <script src="/JS/universidad/calculadora.js"></script>
+</body>
+</html>

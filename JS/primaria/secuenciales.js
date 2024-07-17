@@ -1,10 +1,10 @@
 function checkAnswer(button, exerciseNumber) {
     const exercise = button.closest('.exercise');
-    const answer = exercise.getAttribute('data-answer');
+    const correctAnswer = exercise.getAttribute('data-answer');
     const messageElement = document.getElementById(`txt_msj${exerciseNumber}`);
-    const userAnswer = button.textContent;
+    const userAnswer = button.getAttribute('data-value');
 
-    if (userAnswer == answer) {
+    if (userAnswer == correctAnswer) {
         messageElement.textContent = "Correcto!";
         document.getElementById('acierto').play();
     } else {
