@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acertijo de Números Primos</title>
+    <link rel="stylesheet" href="/CSS/secundaria/ejercicio.css">
+</head>
+<body>
+    <header>
+        <h1>Proyecto Educativo</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">Ejercicios por Niveles</a>
+                    <div class="dropdown-content">
+                        <a href="/HTML/Primaria/primaria.html">Primaria</a>
+                        <a href="/HTML/Secundaria/secundaria.html">Secundaria</a>
+                        <a href="/HTML/Universidad/universidad.html">Universidad</a>
+                    </div>
+                </li>
+                <li><a href="#nosotros">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Verificar numeros Perfectos</h2>
+    <p>Resuelve estos acertijos para descubrir si un número es perfecto:</p>
+    <div class="riddle" id="riddle1">
+        <p>Acertijo 1: ¿Qué número tiene estos divisores: 2, 3, 1 y que al sumarlos da el mismo número?</p>
+        <label for="answer1">
+            <p>Respuesta: <input type="text" id="answer1"></p>
+        </label>
+        <button onclick="checkAnswer(1)">Verificar respuesta</button>
+        <p id="result1"></p>
+    </div>
+    <div class="riddle" id="riddle2">
+        <p>Acertijo 2: Si sumas todos los divisores de un número y obtienes ese mismo número, ¿cómo se llama este número?</p>
+        <label for="answer2">
+            <p>Respuesta: <input type="text" id="answer2"></p>
+        </label>
+        <button onclick="checkAnswer(2)">Verificar respuesta</button>
+        <p id="result2"></p>
+    </div>
+    <div id="results"></div>
+    <script src="/JS/secundaria/perfectos.js"></script>
+</body>
+</html>

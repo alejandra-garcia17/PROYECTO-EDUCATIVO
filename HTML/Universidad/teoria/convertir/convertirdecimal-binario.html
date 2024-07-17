@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversión Decimal a Binario</title>
+    <link rel="stylesheet" href="/CSS/teoria/teoria3.css">
+</head>
+<body>
+    <header>
+        <h1 class="tema">Proyecto Educativo</h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="/index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">Ejercicios por Niveles</a>
+                    <div class="dropdown-content">
+                        <a href="/HTML/Primaria/primaria.html">Primaria</a>
+                        <a href="/HTML/Secundaria/secundaria.html">Secundaria</a>
+                        <a href="/HTML/Universidad/universidad.html">Universidad</a>
+                    </div>
+                </li>
+                <li><a href="#nosotros">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="explicacion">
+            <h2>Pasos para convertir de Decimal a Binario</h2>
+            <section>
+                <h2>Instrucciones</h2>
+                <ul class="content-list">
+                    <li>Dividir el número decimal entre 2.</li>
+            <li>Anotar el residuo (0 o 1) como el bit menos significativo (derecha).</li>
+            <li>Dividir el cociente obtenido en el paso anterior entre 2.</li>
+            <li>Repetir los pasos 2 y 3 hasta que el cociente sea 0.</li>
+            <li>Los residuos anotados en orden inverso forman el número binario.</li>
+                </ul>
+            </section>
+            <h2>Ejemplo</h2>
+            <p>SSupongamos que queremos convertir el número decimal <code>13</code> a binario.</p>
+            <pre>
+             1. Dividimos 13 entre 2:
+                13 ÷ 2 = 6 residuo 1
+             
+             2. Dividimos 6 entre 2:
+                6 ÷ 2 = 3 residuo 0
+             
+             3. Dividimos 3 entre 2:
+                3 ÷ 2 = 1 residuo 1
+             
+             4. Dividimos 1 entre 2:
+                1 ÷ 2 = 0 residuo 1
+             
+             5. Ordenamos los residuos de abajo hacia arriba:
+                1101
+             
+             Por lo tanto, el número decimal <code>13</code> en binario es <code>1101</code>.
+            </pre>
+        </div>
+    </main>
+    <p>En la siguinte pagina encontrara un conversor de numeros decimales a binarios</p>
+    <section id="play">
+        <h2><a href="/HTML/Universidad/conversiones/convertirdecimal-binario.html">¡Conversor!</a></h2>
+    </section>
+</body>
+</html>

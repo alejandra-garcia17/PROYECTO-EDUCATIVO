@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversión de Hexadecimal a Binario</title>
+    <link rel="stylesheet" href="/CSS/teoria/teoria3.css">
+</head>
+<body>
+    <header>
+        <h1 class="tema">Proyecto Educativo</h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="/index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">Ejercicios por Niveles</a>
+                    <div class="dropdown-content">
+                        <a href="/HTML/Primaria/primaria.html">Primaria</a>
+                        <a href="/HTML/Secundaria/secundaria.html">Secundaria</a>
+                        <a href="/HTML/Universidad/universidad.html">Universidad</a>
+                    </div>
+                </li>
+                <li><a href="#nosotros">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="explicacion">
+            <h2>Pasos para convertir de Hexadecimal a Binario</h2>
+            <section>
+                <h2>Instrucciones</h2>
+                <ul class="content-list">
+                    <li>Tomar cada dígito hexadecimal y convertirlo a su valor decimal.</li>
+                    <li>Convertir el valor decimal a su equivalente binario de 4 bits.</li>
+                    <li>Combinar los valores binarios de cada dígito para obtener el resultado final.</li>
+                </ul>
+            </section>
+            <h2>Ejemplo</h2>
+            <p>Supongamos que queremos convertir el número hexadecimal <code>1AD7</code> a binario.</p>
+        <pre>
+            1. Tomamos cada dígito hexadecimal:
+               1 -> 1
+               A -> 10
+               D -> 13
+               7 -> 7
+
+            2. Convertimos cada valor decimal a binario de 4 bits:
+               1 -> 0001
+               10 -> 1010
+               13 -> 1101
+               7 -> 0111
+
+            3. Combinamos los valores binarios:
+            0001 1010 1101 0111
+
+            Por lo tanto, el número hexadecimal <code>1AD7</code> en binario es <code>0001101011010111</code>.
+        </pre>
+        </div>
+    </main>
+    <p>En la siguinte pagina encontrara un conversor de numeros hexadecimales a binarios</p>
+    <section id="play">
+        <h2><a href="/HTML/Universidad/conversiones/convertirhexadecimal-binario.html">¡Conversor!</a></h2>
+    </section>
+</body>
+</html>

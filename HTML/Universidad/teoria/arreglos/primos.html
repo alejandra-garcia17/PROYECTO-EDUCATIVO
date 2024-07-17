@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arreglos de Números Primos</title>
+  <link rel="stylesheet" href="/CSS/teoria/teoria3.css">
+</head>
+<body>
+    <header>
+        <h1 class="tema">Proyecto Educativo</h1>
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="/index.html">Inicio</a></li>
+            <li class="dropdown">
+              <a class="dropbtn">Ejercicios por Niveles</a>
+              <div class="dropdown-content">
+                <a href="/HTML/Primaria/primaria.html">Primaria</a>
+                <a href="/HTML/Secundaria/secundaria.html">Secundaria</a>
+                <a href="/HTML/Universidad/universidad.html">Universidad</a>
+              </div>
+            </li>
+            <li><a href="/HTML/nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="/HTML/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+      <main>
+        <section>
+          <h1>¡Adentrándonos en el mundo de los arreglos de números primos!</h1>
+          <h2>¿Qué son los números primos?</h2>
+          <p>Los números primos son aquellos números naturales mayores que 1 que solo son divisibles por 1 y por sí mismos. Son como los bloques fundamentales de los números enteros, ya que cualquier número entero mayor que 1 se puede descomponer en un producto único de números primos.</p>
+          <h2>¿Y qué son los arreglos?</h2>
+          <p>Imagina una caja ordenada donde guardas objetos. Cada objeto tiene su propio lugar, y a ese lugar lo llamamos posición o índice. Los arreglos, también conocidos como vectores o matrices, son como estas cajas: almacenan una colección de elementos de un mismo tipo, y cada elemento tiene su propia posición.</p>
+          <h2>¡Uniendo fuerzas: arreglos de números primos!</h2>
+          <p>Un arreglo de números primos es simplemente una colección ordenada de números primos. Es como tener una caja especial donde solo guardas los bloques fundamentales de los números enteros.</p>
+          <h2>¿Para qué sirven los arreglos de números primos?</h2>
+          <ul class="content-list">
+            <li><strong>Teoría de números:</strong> Se utilizan para estudiar las propiedades de los números primos y su distribución.</li>
+            <li><strong>Criptografía:</strong> Son esenciales para el desarrollo de algoritmos de cifrado y seguridad en la comunicación digital.</li>
+            <li><strong>Optimización de algoritmos:</strong> Se emplean para diseñar algoritmos más eficientes en problemas como la búsqueda de números primos grandes o la factorización de enteros.</li>
+          </ul>
+          <h2>¡Manos a la obra: creando arreglos de números primos!</h2>
+          <p>Existen diferentes maneras de crear arreglos de números primos, dependiendo del lenguaje de programación que utilices. A continuación, te presento un ejemplo en JavaScript:</p>
+          <pre>
+    function crearArregloPrimos(n) {
+      /**
+       * Función que crea un arreglo de los n primeros números primos.
+       *
+       * @param {number} n - El número máximo de primos a almacenar en el arreglo.
+       * @returns {number[]} Un arreglo con los n primeros números primos.
+       */
+      let primos = [];
+      let numero = 2;
+    
+      while (primos.length < n) {
+        let esPrimo = true;
+        for (let i = 2; i < numero; i++) {
+          if (numero % i === 0) {
+            esPrimo = false;
+            break;
+          }
+        }
+        if (esPrimo) {
+          primos.push(numero);
+        }
+        numero += 1;
+      }
+    
+      return primos;
+    }
+    
+    // Ejemplo de uso
+    let primos_10 = crearArregloPrimos(10);
+    console.log(primos_10);  // Imprime: [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+          </pre>
+        </section>
+      </main>
+  <section id="play">
+    <h2><a href="/HTML/Universidad/arreglos/primos.html">¡Sigue explorando!</a></h2>
+  </section>
+</body>
+</html>

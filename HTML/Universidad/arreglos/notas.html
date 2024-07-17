@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promedio y Moda de Notas</title>
+  <link rel="stylesheet" href="/CSS/universidad/primos.css">
+</head>
+<body>
+    <header>
+        <h1>Proyecto Educativo</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">Ejercicios por Niveles</a>
+                    <div class="dropdown-content">
+                        <a href="/HTML/Primaria/primaria.html">Primaria</a>
+                        <a href="/HTML/Secundaria/secundaria.html">Secundaria</a>
+                        <a href="/HTML/Universidad/universidad.html">Universidad</a>
+                    </div>
+                </li>
+                <li><a href="/HTML/nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="/HTML/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Dado un arreglo de notas obtener el promedio y la moda</h1>
+            <form id="numerosForm">
+                <label for="notas-input">Ingrese números separados por comas:</label><br>
+                <input type="text" id="notas-input" name="notas-input" required><br><br>
+                <button type="submit">Calcular el promedio y la moda</button>
+            </form>
+            <div id="resultado">
+                <p id="promedio">Promedio:</p>
+                <p id="moda">Moda:</p>
+            </div>
+        </div>
+        <div class="explanation-box">
+            <h3>Explicación del código</h3>
+            <p>Calcula el promedio de un array de números sumando todos los elementos y dividiendo por la cantidad de elementos. Calcula la moda de un array de números contando las frecuencias de cada valor utilizando un Map</p>
+        </div>
+    </main>
+    <script src="/JS/universidad/notas.js"></script>
+    <footer>
+        <p>&copy; 2024 Proyecto Educativo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

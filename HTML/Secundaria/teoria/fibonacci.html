@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secuencia de Fibonacci</title>
+    <link rel="stylesheet" href="/CSS/teoria/teoria2.css">
+</head>
+<body>
+    <header>
+        <h1 class="tema">Proyecto Educativo</h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="/index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">Ejercicios por Niveles</a>
+                    <div class="dropdown-content">
+                        <a href="/HTML/Primaria/primaria.html">Primaria</a>
+                        <a href="/HTML/Secundaria/secundaria.html">Secundaria</a>
+                        <a href="/HTML/Universidad/universidad.html">Universidad</a>
+                    </div>
+                </li>
+                <li><a href="#nosotros">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>¡Prepárate para una aventura matemática con la Secuencia de Fibonacci!</h1>
+        <section id="intro">
+            <p>Imagina una serie de números donde cada uno es la suma de los dos anteriores, como si los conejos se reprodujeran: un par de conejos tiene dos crías, esas dos crías se convierten en parejas y tienen dos crías más, y así sucesivamente. ¡Esa es la magia de la Secuencia de Fibonacci!</p>
+        </section>
+        <section id="how-it-works">
+            <h2>¿Cómo funciona?</h2>
+            <p>Empezamos con 0 y 1:</p>
+            <p><strong>0, 1</strong></p>
+            <p>Sumamos el 0 y el 1 para obtener el siguiente número:</p>
+            <p><strong>0, 1, 1</strong></p>
+            <p>Sumamos el 1 anterior y el 1 actual para obtener el siguiente:</p>
+            <p><strong>0, 1, 1, 2</strong></p>
+            <p>Continuamos sumando los dos números anteriores para obtener la secuencia:</p>
+            <p><strong>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89...</strong></p>
+        </section>
+        <section id="importance">
+            <h2>¿Qué tan especial es esta secuencia?</h2>
+            <h3>En la naturaleza:</h3>
+            <p>¡Sorpresa! La secuencia de Fibonacci se encuentra en muchos lugares, desde las flores de girasol hasta las conchas de los caracoles.</p>
+            <img src="/IMG/teoria/secundaria/Fibonacci/girasol.jpg" alt="Girasol con la secuencia de Fibonacci marcada en sus pétalos">
+            <img src="/IMG/teoria/secundaria/Fibonacci/concha.jpg" alt="Concha de caracol con la secuencia de Fibonacci marcada en su espiral">
+            <h3>Proporción áurea:</h3>
+            <p>A medida que avanzamos en la secuencia, la división de un número por su anterior se acerca a un número especial llamado proporción áurea, representado por la letra griega φ (phi). Esta proporción se ve en el arte y la arquitectura, ¡incluso en el Partenón!</p>
+            <img src="/IMG/teoria/secundaria/Fibonacci/partenon.jpg" alt="Partenón con la proporción áurea marcada">
+            <h3>Patrones matemáticos:</h3>
+            <p>La secuencia de Fibonacci está llena de patrones matemáticos que fascinan a los científicos y artistas.</p>
+        </section>
+        <section id="exercise">
+            <h2>¡Explora con ejercicios!</h2>
+            <h3>¿Cuántos conejos habrá después de 10 meses?</h3>
+            <p>Usando la secuencia de Fibonacci, podemos calcular la cantidad de conejos en cada mes:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mes</th>
+                        <th>Conejos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>34</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>55</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>89</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Explicación:</h3>
+            <p>En el mes 0, hay 1 conejo.</p>
+            <p>En el mes 1, hay 1 conejo del mes anterior y 1 nuevo conejo nacido.</p>
+            <p>En el mes 2, hay 1 conejo del mes anterior y 1 nuevo conejo nacido (de la pareja del mes 1), lo que da un total de 2 conejos.</p>
+            <p>Continuamos sumando los conejos de los dos meses anteriores para obtener la cantidad total en cada mes.</p>
+        </section>
+        <p>En la siguiente encontra una calculadora que generara la tabla de cualquier numero que usted escriba y presentara la tabla hasta el numero 10</p>
+        <section id="play">
+            <h2><a href="/HTML/Secundaria/fibonacci.html">¡Sigue explorando!</a></h2>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Proyecto Educativo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

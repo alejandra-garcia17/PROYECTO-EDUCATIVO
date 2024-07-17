@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIOS</title>
+    <link rel="stylesheet" href="/CSS/secundaria/ejercicio.css">
+</head>
+<body>
+    <header>
+        <h1>Proyecto Educativo</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">Ejercicios por Niveles</a>
+                    <div class="dropdown-content">
+                        <a href="/HTML/Primaria/primaria.html">Primaria</a>
+                        <a href="/HTML/Secundaria/secundaria.html">Secundaria</a>
+                        <a href="/HTML/Universidad/universidad.html">Universidad</a>
+                    </div>
+                </li>
+                <li><a href="#nosotros">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Verificar si un número es primo</h2>
+            <form id="numerosForm" onsubmit="primo(); return false;">
+                <label for="numero">Ingrese un numero:</label>
+                <input type="number" id="numero" required>
+                <button type="button" class="boton" onclick="primo()">Verificar</button>
+            </form>
+            <div id="resultado">
+                Respuesta:
+            </div>
+            <div class="explanation-box">
+                <h3>Explicacion</h3>
+                <p>Recuerda que un número es primo cuando solo se puede divivir para si mismo y para unidad (1)</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>InovaByte Tech</p>
+    </footer>
+
+<script src="/JS/secundaria/primos2.js"></script>
+
+</body>
+</html>

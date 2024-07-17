@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversión de Decimal a Binario</title>
+    <link rel="stylesheet" href="/CSS/universidad/primos.css">
+</head>
+<body>
+    <audio id="acierto">
+        <source src="/acierto.mp3">
+    </audio>
+    <audio id="fallo">
+        <source src="/fallo.mp3">
+    </audio>
+    <header>
+        <h1>Proyecto Educativo</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">Ejercicios por Niveles</a>
+                    <div class="dropdown-content">
+                        <a href="/HTML/Primaria/primaria.html">Primaria</a>
+                        <a href="/HTML/Secundaria/secundaria.html">Secundaria</a>
+                        <a href="/HTML/Universidad/universidad.html">Universidad</a>
+                    </div>
+                </li>
+                <li><a href="#nosotros">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Conversión de Decimal a Binario</h1>
+            <label for="decimal">Ingresa un número binario:</label>
+            <input type="text" id="decimal">
+            <button onclick="convertir()">Convertir</button>
+            <p id="resultado"></p>
+            <a href="/index.html" class="regresar">Regresar a la página principal</a>
+        </div>
+        <script src="/JS/universidad/decimal-binario.js"></script>
+    </main>
+    <footer>
+        <p>&copy; 2024 Proyecto Educativo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

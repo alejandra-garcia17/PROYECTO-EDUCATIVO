@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arreglos de Números Perfectos</title>
+  <link rel="stylesheet" href="/CSS/teoria/teoria3.css">
+</head>
+<body>
+  <header>
+    <h1 class="tema">Proyecto Educativo</h1>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="/index.html">Inicio</a></li>
+        <li class="dropdown">
+          <a class="dropbtn">Ejercicios por Niveles</a>
+          <div class="dropdown-content">
+            <a href="/HTML/Primaria/primaria.html">Primaria</a>
+            <a href="/HTML/Secundaria/secundaria.html">Secundaria</a>
+            <a href="/HTML/Universidad/universidad.html">Universidad</a>
+          </div>
+        </li>
+        <li><a href="/HTML/nosotros.html">Sobre Nosotros</a></li>
+        <li><a href="/HTML/contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>¡Desentrañando los misterios de los arreglos de números perfectos!</h1>
+      <h2>Introducción:</h2>
+      <p>En el fascinante mundo de las matemáticas, los números perfectos ocupan un lugar especial. Se les considera números "amigables", ya que son iguales a la suma de sus divisores propios positivos. A diferencia de los números primos, que solo se dividen por sí mismos y por 1, los números perfectos albergan una armonía interna única.</p>
+      <h2>¿Qué son los arreglos de números perfectos?</h2>
+      <p>Imaginemos un cofre mágico donde guardamos estos números especiales. Cada número perfecto tiene su propio compartimento, y al abrir el cofre, descubrimos una colección ordenada de estos tesoros matemáticos. Los arreglos de números perfectos, también conocidos como vectores o matrices, son estructuras que almacenan esta colección de manera organizada.</p>
+      <h2>¿Para qué sirven los arreglos de números perfectos?</h2>
+      <ul class="content-list">
+        <li><strong>Teoría de números:</strong> Sirven para estudiar las propiedades de estos números, su distribución y patrones de aparición.</li>
+        <li><strong>Criptografía:</strong> Son esenciales en el diseño de algoritmos de cifrado y seguridad en la comunicación digital.</li>
+        <li><strong>Optimización de algoritmos:</strong> Se emplean para mejorar la eficiencia de algoritmos relacionados con la búsqueda y factorización de números perfectos.</li>
+      </ul>
+      <h2>¡Creando arreglos de números perfectos!</h2>
+      <p>Existen diferentes maneras de crear arreglos de números perfectos, dependiendo del lenguaje de programación que utilices. A continuación, te presento un ejemplo en JavaScript:</p>
+      <pre>
+function crearArregloPerfectos(n) {
+  /**
+   * Función que crea un arreglo de los n primeros números perfectos.
+   *
+   * @param {number} n - El número máximo de números perfectos a almacenar en el arreglo.
+   * @returns {number[]} Un arreglo con los n primeros números perfectos.
+   */
+  let perfectos = [];
+  let numero = 2;
+
+  while (perfectos.length < n) {
+    if (esPerfecto(numero)) {
+      perfectos.push(numero);
+    }
+    numero += 1;
+  }
+
+  return perfectos;
+}
+
+function esPerfecto(numero) {
+  /**
+   * Función que verifica si un número es perfecto.
+   *
+   * @param {number} numero - El número a verificar.
+   * @returns {boolean} True si el número es perfecto, False en caso contrario.
+   */
+  if (numero <= 1) {
+    return false;
+  }
+  let sumaDivisores = 1;
+  for (let i = 2; i <= numero / 2; i++) {
+    if (numero % i === 0) {
+      sumaDivisores += i;
+    }
+  }
+  return sumaDivisores === numero;
+}
+
+// Ejemplo de uso
+let perfectos_5 = crearArregloPerfectos(5);
+console.log(perfectos_5);  // Imprime: [6, 28, 496, 8128, 33550336]
+      </pre>
+    </section>
+  </main>
+  <section id="play">
+    <h2><a href="/HTML/Universidad/arreglos/perfectos.html">¡Sigue explorando!</a></h2>
+  </section>
+  <footer>
+    <p>Derechos reservados &copy; 2024</p>
+  </footer>
+</body>
+</html>

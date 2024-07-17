@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Tablas</title>
+    <link rel="stylesheet" href="/CSS/secundaria/ejercicio.css">
+</head>
+<body>
+    <header>
+        <h1>Proyecto Educativo</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">Ejercicios por Niveles</a>
+                    <div class="dropdown-content">
+                        <a href="/HTML/Primaria/primaria.html">Primaria</a>
+                        <a href="/HTML/Secundaria/secundaria.html">Secundaria</a>
+                        <a href="/HTML/Universidad/universidad.html">Universidad</a>
+                    </div>
+                </li>
+                <li><a href="#nosotros">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Generador de Tablas</h1>
+            <form id="numerosForm" onsubmit="generarSecuencia(); return false;">
+                <h2>Generador de secuencia de Fibonacci</h2>
+                <label for="numero">Ingrese un número entero positivo:</label>
+                <input type="number" id="numero" min="1" step="1">
+                <button type="submit">Generar secuencia</button>
+            </form>
+            <div id="resultado"></div>
+            <div class="explanation-box">
+                <h3>Explicacion del codigo</h3>
+                <p>Se inicia a y b como los primeros dos números de la secuencia de Fibonacci.Se utiliza un bucle for para generar los primeros cantidad números de Fibonacci, almacenándolos en el array resultado. Finalmente, se muestra el resultado en el elemento con id "resultado" usando document.getElementById('resultado').textContent.</p>
+            </div>
+        </div>
+    </main>
+    <script src="/JS/secundaria/fibonacci.js"></script>
+    <footer>
+        <p>&copy; 2024 Proyecto Educativo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

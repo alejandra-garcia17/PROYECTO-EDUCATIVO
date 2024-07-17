@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de Introducción a Condicionales</title>
+    <link rel="stylesheet" href="/CSS/Primaria/condicionales.css">
+</head>
+<body>
+    <audio id="acierto">
+        <source src="/acierto.mp3">
+    </audio>
+    <audio id="fallo">
+        <source src="/fallo.mp3">
+    </audio>
+    <header>
+        <h1>Proyecto Educativo</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">Ejercicios por Niveles</a>
+                    <div class="dropdown-content">
+                        <a href="/HTML/Primaria/primaria.html">Primaria</a>
+                        <a href="/HTML/Secundaria/secundaria.html">Secundaria</a>
+                        <a href="/HTML/Universidad/universidad.html">Universidad</a>
+                    </div>
+                </li>
+                <li><a href="#nosotros">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Ejercicios de Introducción a Condicionales</h1>
+        <div id="exercise-container">
+            <div class="exercise" data-answer="Sombrero" id="ejercicio1">
+                <p>Si hace sol, ¿qué debes llevar?</p>
+                <div class="options">
+                    <button onclick="checkAnswer(this, 'Sombrero', 1)">
+                        <img src="/IMG/condicionales/sombrero.jpg" alt="Sombrero">
+                    </button>
+                    <button onclick="checkAnswer(this, 'Sombrero', 1)">
+                        <img src="/IMG/condicionales/lapiz.png" alt="Lapiz">
+                    </button>
+                </div>
+                <p id="txt_msj1" class="message"></p>
+            </div>
+            <div class="exercise" data-answer="Alfombra" id="ejercicio2" style="display: none;">
+                <p>¿Qué tiene más superficie, una mesa de 1 m² o una alfombra de 2 m²?</p>
+                <div class="options">
+                    <button onclick="checkAnswer(this, 'Alfombra', 2)">
+                        <img src="/IMG/condicionales/mesa.jpg" alt="Mesa">
+                    </button>
+                    <button onclick="checkAnswer(this, 'Alfombra', 2)">
+                        <img src="/IMG/condicionales/alfombra.jpg" alt="Alfombra">
+                    </button>
+                </div>
+                <p id="txt_msj2" class="message"></p>
+            </div>
+            <div class="exercise" data-answer="Balcón" id="ejercicio3" style="display: none;">
+                <p>¿Cuál es menor, un jardín de 10 m² o un balcón de 5 m²?</p>
+                <div class="options">
+                    <button onclick="checkAnswer(this, 'Balcón', 3)">
+                        <img src="/IMG/condicionales/jardin.jpg" alt="Jardín">
+                    </button>
+                    <button onclick="checkAnswer(this, 'Balcón', 3)">
+                        <img src="/IMG/condicionales/balcon.jpg" alt="Balcón">
+                    </button>
+                </div>
+                <p id="txt_msj3" class="message"></p>
+            </div>
+            <div class="exercise" data-answer="Botella" id="ejercicio4" style="display: none;">
+                <p>¿Qué recipiente puede contener más líquido, un vaso de 250 ml o una botella de 1 litro?</p>
+                <div class="options">
+                    <button onclick="checkAnswer(this, 'Botella', 4)">
+                        <img src="/IMG/condicionales/vaso.png" alt="Vaso">
+                    </button>
+                    <button onclick="checkAnswer(this, 'Botella', 4)">
+                        <img src="/IMG/condicionales/botella.png" alt="Botella">
+                    </button>
+                </div>
+                <p id="txt_msj4" class="message"></p>
+            </div>
+        </div>
+        <div id="final-explanation" style="display: none;">
+            <h2>Explicación de las Respuestas Correctas</h2>
+            <p><strong>Ejercicio 1:</strong> Si hace sol, es mejor llevar un sombrero para protegerse del sol.</p>
+            <p><strong>Ejercicio 2:</strong> La alfombra tiene más superficie (2 m²) comparada con la mesa (1 m²).</p>
+            <p><strong>Ejercicio 3:</strong> Un balcón de 5 m² es menor en tamaño que un jardín de 10 m².</p>
+            <p><strong>Ejercicio 4:</strong> Una botella de 1 litro puede contener más líquido que un vaso de 250 ml.</p>
+            <a href="/HTML/Primaria/primaria.html" class="back-to-top-button">Regresar a ejercicios de primaria</a>
+        </div>
+    </main>
+    <script src="/JS/primaria/condicionales.js"></script>
+    <footer>
+        <p>&copy; 2024 Proyecto Educativo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Adentrándonos en el mundo de los bucles!</title>
+    <link rel="stylesheet" href="/CSS/teoria/teoria2.css">
+</head>
+<body>
+    <header>
+        <h1 class="tema">Proyecto Educativo</h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="/index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">Ejercicios por Niveles</a>
+                    <div class="dropdown-content">
+                        <a href="/HTML/Primaria/primaria.html">Primaria</a>
+                        <a href="/HTML/Secundaria/secundaria.html">Secundaria</a>
+                        <a href="/HTML/Universidad/universidad.html">Universidad</a>
+                    </div>
+                </li>
+                <li><a href="#nosotros">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>¡Adentrándonos en el mundo de los bucles: una aventura interactiva para exploradores de secundaria!</h1>
+        <p>En el fascinante universo de la programación, los bucles son como superpoderes que nos permiten repetir instrucciones de manera automática. Imagina que eres un mago y con solo un hechizo (un bucle) puedes realizar múltiples tareas sin necesidad de repetirlas una y otra vez. ¡Genial!</p>
+        <h2>¿Qué son los bucles?</h2>
+        <p>Piensa en una caja mágica que contiene instrucciones. Los bucles te permiten coger una instrucción de la caja, ejecutarla, y luego regresar por ella una y otra vez hasta que se cumpla una condición específica. Es como si la caja se reabasteciera automáticamente cada vez que la usas.</p>
+        <h2>¿Para qué sirven los bucles?</h2>
+        <p>Los bucles son esenciales para realizar tareas repetitivas de manera eficiente. Algunos ejemplos de su uso son:</p>
+        <ul class="content-list">
+            <li>Imprimir números: Un bucle puede imprimir una secuencia de números, desde 1 hasta 100, por ejemplo.</li>
+            <li>Sumar elementos: Un bucle puede sumar todos los números de un arreglo o lista.</li>
+            <li>Contar ocurrencias: Un bucle puede contar cuántas veces aparece una letra específica en una frase.</li>
+            <li>Simular acciones: Un bucle puede simular el movimiento de un personaje en un juego o la animación de un objeto.</li>
+        </ul>
+        <h2>Tipos de bucles:</h2>
+        <p>Existen diferentes tipos de bucles, cada uno con su propia forma de funcionar:</p>
+        <ul class="content-list">
+            <li><b>Bucle for:</b> Se utiliza para ejecutar un conjunto de instrucciones un número determinado de veces.</li>
+            <li><b>Bucle while:</b> Se utiliza para ejecutar un conjunto de instrucciones mientras se cumpla una condición específica.</li>
+            <li><b>Bucle do-while:</b> Similar al bucle while, pero la verificación de la condición se realiza al final de cada iteración.</li>
+        </ul>
+        <h2>Ejemplo 1: Imprimiendo números del 1 al 10</h2>
+        <div class="example">
+            <p><b>JavaScript</b></p>
+            <div class="code-container">
+                <pre>
+                    // Bucle for
+                    for (let i = 1; i <= 10; i++) {
+                        console.log(i);
+                    }
+                </pre>
+            </div>
+            <p><b>Explicación:</b></p>
+            <ul class="content-list">
+                <li>El bucle for recorre los números del 1 al 10 (incluyendo el 10).</li>
+                <li>La variable <code>i</code> toma el valor de cada número en el rango.</li>
+                <li>La instrucción <code>console.log(i)</code> imprime el valor de <code>i</code> en cada iteración.</li>
+            </ul>
+        </div>
+
+        <h2>Ejemplo 2: Sumando elementos de un arreglo</h2>
+        <div class="example">
+            <p><b>JavaScript</b></p>
+            <div class="code-container">
+                <pre>
+                    // Arreglo de números
+                    let numeros = [1, 5, 3, 4, 2];
+
+                    // Suma de elementos
+                    let suma = 0;
+                    for (let numero of numeros) {
+                        suma += numero;
+                    }
+
+                    console.log("La suma de los elementos es:", suma);
+                </pre>
+            </div>
+            <p><b>Explicación:</b></p>
+            <ul class="content-list">
+                <li>El bucle for recorre cada elemento del arreglo <code>numeros</code>.</li>
+                <li>La variable <code>numero</code> toma el valor de cada elemento del arreglo en cada iteración.</li>
+                <li>La instrucción <code>suma += numero</code> agrega el valor de <code>numero</code> a la variable <code>suma</code>.</li>
+                <li>Al final del bucle, la variable <code>suma</code> contiene la suma total de los elementos del arreglo.</li>
+            </ul>
+        </div>
+        <p>En el siguiente enlace encontraras algunos ejercicios, el lo que deberas observar cual es el numero que mas se repite de cada secuencia</p>
+        <section id="play">
+            <h2><a href="/HTML/Secundaria/bucles.html">¡Juguemos con los bucles!</a></h2>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acertijo de Números Primos</title>
+    <link rel="stylesheet" href="/CSS/secundaria/ejercicio.css">
+</head>
+<body>
+    <header>
+        <h1>Proyecto Educativo</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">Ejercicios por Niveles</a>
+                    <div class="dropdown-content">
+                        <a href="/HTML/Primaria/primaria.html">Primaria</a>
+                        <a href="/HTML/Secundaria/secundaria.html">Secundaria</a>
+                        <a href="/HTML/Universidad/universidad.html">Universidad</a>
+                    </div>
+                </li>
+                <li><a href="#nosotros">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Verificar números Primos</h2>
+    <p>Decide si los siguientes números son primos o no:</p>
+    <div id="quiz">
+        <div class="question" id="question1">
+            <div class="question-container">
+                <p>1. ¿Es el número 7 primo?</p>
+                <input type="radio" id="q1-yes" name="q1" value="yes">
+                <label for="q1-yes">Sí</label>
+                <input type="radio" id="q1-no" name="q1" value="no">
+                <label for="q1-no">No</label>
+            </div>
+        </div>
+        <div class="question" id="question2">
+            <div class="question-container">
+                <p>2. ¿Es el número 12 primo?</p>
+                <input type="radio" id="q2-yes" name="q2" value="yes">
+                <label for="q2-yes">Sí</label>
+                <input type="radio" id="q2-no" name="q2" value="no">
+                <label for="q2-no">No</label>
+            </div>
+        </div>
+        <div class="question" id="question3">
+            <div class="question-container">
+                <p>3. ¿Es el número 23 primo?</p>
+                <input type="radio" id="q3-yes" name="q3" value="yes">
+                <label for="q3-yes">Sí</label>
+                <input type="radio" id="q3-no" name="q3" value="no">
+                <label for="q3-no">No</label>
+            </div>
+        </div>
+        <button id="submit">Verificar Respuestas</button>
+    </div>
+    <div id="results"></div>
+
+    <script src="/JS/secundaria/primos.js"></script>
+</body>
+</html>

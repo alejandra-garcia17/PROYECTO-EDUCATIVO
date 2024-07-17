@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de Bucles</title>
+    <link rel="stylesheet" href="/CSS/secundaria/ejercicio.css">
+</head>
+<body>
+    <header>
+        <h1 class="tema">Proyecto Educativo</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">Ejercicios por Niveles</a>
+                    <div class="dropdown-content">
+                        <a href="/HTML/Primaria/primaria.html">Primaria</a>
+                        <a href="/HTML/Secundaria/secundaria.html">Secundaria</a>
+                        <a href="/HTML/Universidad/universidad.html">Universidad</a>
+                    </div>
+                </li>
+                <li><a href="#nosotros">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Ejercicios de Bucles</h1>
+    <div class="exercise" id="exercise1">
+        <p>1. ¿Cuál es el número que se repite más en la secuencia: 3, 6, 3, 9, 3, 12?</p>
+        <input type="text" id="answer1">
+        <button onclick="checkAnswer(1, '3')">Verificar</button>
+        <p id="result1" class="result"></p>
+    </div>
+
+    <div class="exercise" id="exercise2">
+        <p>2. ¿Cuál es el número que se repite más en la secuencia: 7, 7, 14, 21, 7, 28?</p>
+        <input type="text" id="answer2">
+        <button onclick="checkAnswer(2, '7')">Verificar</button>
+        <p id="result2" class="result"></p>
+    </div>
+
+    <div class="exercise" id="exercise3">
+        <p>3. ¿Cuál es el número que se repite más en la secuencia: 5, 10, 15, 20, 5, 25?</p>
+        <input type="text" id="answer3">
+        <button onclick="checkAnswer(3, '5')">Verificar</button>
+        <p id="result3" class="result"></p>
+    </div>
+
+    <div class="exercise" id="exercise4">
+        <p>4. ¿Cuál es el número que se repite más en la secuencia: 2, 4, 6, 8, 10, 4, 12?</p>
+        <input type="text" id="answer4">
+        <button onclick="checkAnswer(4, '4')">Verificar</button>
+        <p id="result4" class="result"></p>
+    </div>
+
+    <div class="exercise" id="exercise5">
+        <p>5. ¿Cuál es el número que se repite más en la secuencia: 9, 18, 27, 9, 36, 45?</p>
+        <input type="text" id="answer5">
+        <button onclick="checkAnswer(5, '9')">Verificar</button>
+        <p id="result5" class="result"></p>
+    </div>
+
+    <script>
+        function checkAnswer(exerciseNumber, correctAnswer) {
+            let answer = document.getElementById('answer' + exerciseNumber).value;
+            let result = document.getElementById('result' + exerciseNumber);
+            if (answer === correctAnswer) {
+                result.textContent = "¡Correcto!";
+                result.style.color = "green";
+            } else {
+                result.textContent = "Inténtalo de nuevo.";
+                result.style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>

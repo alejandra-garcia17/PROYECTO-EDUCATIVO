@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números Pares e Impares</title>
+    <link rel="stylesheet" href="../css/abctarea.css">
+    <link rel="stylesheet" href="/CSS/secundaria/ejercicio.css">
+</head>
+<body>
+    <header>
+        <h1>Proyecto Educativo</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">Ejercicios por Niveles</a>
+                    <div class="dropdown-content">
+                        <a href="/HTML/Primaria/primaria.html">Primaria</a>
+                        <a href="/HTML/Secundaria/secundaria.html">Secundaria</a>
+                        <a href="/HTML/Universidad/universidad.html">Universidad</a>
+                    </div>
+                </li>
+                <li><a href="#nosotros">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Números Pares e Impares</h1>
+        <p>Ingresa una lista de números enteros separados por comas y te mostraremos todos los números pares e impares.</p>
+        <input type="text" id="numeros" placeholder="Ingresa los números separados por comas">
+        <button onclick="mostrarNumeros()">Mostrar Números</button>
+        <div id="resultado"></div>
+        <h2>Explicación del Algoritmo</h2>
+        <p>El algoritmo para mostrar todos los números pares e impares en una lista consiste en recorrer todos los números ingresados, y clasificarlos como pares o impares.</p>
+        <p>Para cada número en la lista, verificamos si es par o impar:</p>
+        <ul>
+            <li>Un número es par si al dividirlo entre 2 el residuo es 0.</li>
+            <li>Un número es impar si al dividirlo entre 2 el residuo es 1.</li>
+        </ul>
+        <p>Utilizamos un bucle <code>for</code> para recorrer todos los números en la lista y dos arreglos para almacenar los números pares e impares.</p>
+    </div>
+    <script defer src="/JS/secundaria/pares-impares.js"></script>
+</body>
+</html>

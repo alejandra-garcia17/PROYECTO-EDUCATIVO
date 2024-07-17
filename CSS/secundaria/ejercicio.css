@@ -1,0 +1,243 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFE5D9;
+}
+
+header {
+    background-color: #bfe3cd;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.tema{
+    color: #f8f3f3;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos del menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFCAD4;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #555;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #333;
+}
+
+footer {
+    background-color: #9D8189;
+    color: #161515;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    bottom: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/*PARTE DE LOS EJERCICIOS*/
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #E3D5CA;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+label, input, button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+input, button {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #bdb0a7;
+    ;
+    color: #131213;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+}
+
+p{
+    color: #181719;
+}
+
+.explanation-box {
+    border: 1px solid #000;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    background-color: #E3D5CA;
+    line-height: 1.5;
+}
+
+.styled-select {
+    appearance: none;
+    background-color: #e2b778;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 200px;
+}
+
+.question {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.question-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f6b89c;
+}
+
+.question p {
+    margin: 0;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.question input[type="radio"] {
+    margin-right: 5px;
+}
+
+.riddle {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.riddle p {
+    margin: 0 0 10px 0;
+}
+.riddle input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+.riddle button {
+    padding: 5px 10px;
+    margin-top: 5px;
+}
+.riddle #result1, .riddle #result2 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.exercise {
+    border: 1px solid #0c0c0c;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.result {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+

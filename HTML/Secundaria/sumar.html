@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma de Números Naturales</title>
+    <link rel="stylesheet" href="/CSS/secundaria/ejercicio.css">
+</head>
+<body>
+    <header>
+        <h1 class="tema">Proyecto Educativo</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">Ejercicios por Niveles</a>
+                    <div class="dropdown-content">
+                        <a href="/HTML/Primaria/primaria.html">Primaria</a>
+                        <a href="/HTML/Secundaria/secundaria.html">Secundaria</a>
+                        <a href="/HTML/Universidad/universidad.html">Universidad</a>
+                    </div>
+                </li>
+                <li><a href="#nosotros">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <form id="numerosForm" onsubmit="calcularSuma(); return false;">
+            <h2>Calculadora de Suma de Números Naturales</h2>
+            <label for="numero">Ingrese un número entero positivo:</label>
+            <input type="number" id="numero" min="1" step="1">
+            <button type="submit">Generar secuencia</button>
+        </form>
+        <div id="resultado"></div>
+        <div class="explanation-box">
+            <h3>Explicacion del codigo</h3>
+            <p>Lo que hace este codigo es ir sumando desde el numero uno, hasta el numero que ingresate</p>
+        </div>
+    </div>
+    <script src="/JS/secundaria/sumar.js"></script>
+</body>
+</html>

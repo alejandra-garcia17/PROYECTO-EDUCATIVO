@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversión Binario a Decimal</title>
+    <link rel="stylesheet" href="/CSS/teoria/teoria3.css">
+</head>
+<body>
+    <header>
+        <h1 class="tema">Proyecto Educativo</h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="/index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">Ejercicios por Niveles</a>
+                    <div class="dropdown-content">
+                        <a href="/HTML/Primaria/primaria.html">Primaria</a>
+                        <a href="/HTML/Secundaria/secundaria.html">Secundaria</a>
+                        <a href="/HTML/Universidad/universidad.html">Universidad</a>
+                    </div>
+                </li>
+                <li><a href="#nosotros">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="explicacion">
+            <h2>Pasos para convertir binario a decimal</h2>
+            <section>
+                <h2>Instrucciones</h2>
+                <ul class="content-list">
+                    <li>Identificar la posición de cada dígito en el número binario, empezando desde la derecha con la posición 0.</li>
+                    <li>Multiplicar cada dígito binario (0 o 1) por 2 elevado a la potencia de su posición.</li>
+                    <li>Sumar todos los valores obtenidos en el paso anterior para obtener el número decimal.</li>
+                </ul>
+            </section>
+            <h2>Ejemplo</h2>
+            <p>Supongamos que queremos convertir el número binario <code>1101</code> a decimal.</p>
+            <pre>
+    1. Identificamos las posiciones:
+       1 1 0 1
+       3 2 1 0 (posiciones)
+    
+    2. Multiplicamos cada dígito por 2 elevado a su posición:
+       1 * 2^3 = 8
+       1 * 2^2 = 4
+       0 * 2^1 = 0
+       1 * 2^0 = 1
+    
+    3. Sumamos los valores:
+       8 + 4 + 0 + 1 = 13
+    
+    Por lo tanto, el número binario <code>1101</code> en decimal es <code>13</code>.
+            </pre>
+        </div>
+    </main>
+    <p>En la siguinte pagina encontrara un conversor de numeros binarios de decimal</p>
+    <section id="play">
+        <h2><a href="/HTML/Universidad/conversiones/convertirbinario-decimal.html">¡Conversor!</a></h2>
+    </section>
+</body>
+</html>
